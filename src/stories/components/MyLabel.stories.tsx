@@ -8,9 +8,10 @@ export default {
  title: 'UI/MyLabel',
  component: MyLabel,
  argTypes:{
-    size:        { control:'select' },
-    color:       { control:'select' },
-    fontColor:   { control: 'color' }
+    size:               { control:'select' },
+    color:              { control:'select' },
+    fontColor:          { control: 'color' },
+    backgroundColor:    { control:'color' }
  }
 }as ComponentMeta<typeof MyLabel>
 
@@ -54,4 +55,14 @@ CustomFontColor.args = {
     label:'Custom Font Color',
     size:'h2',
     fontColor:'pink'
+}
+
+// backgroundColor
+
+export const customBackgroundColor = Template.bind({});
+customBackgroundColor.args = {
+    label:'Custom Font Color',
+    size:'h2',
+    fontColor: 'white',
+    backgroundColor:'black'
 }
